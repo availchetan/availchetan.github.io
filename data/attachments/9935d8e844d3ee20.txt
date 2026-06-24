@@ -1,0 +1,11 @@
+{
+    "menu_plan_id": "menu_bangalore_veg_01",
+    "start_date": "2026-07-01",
+    "duration_days": 15,
+    "meal_types": ["breakfast", "lunch"],
+    "meal_addresses": {
+        "breakfast": "addr_1782315963",
+        "lunch": "addr_1782315963"
+    },
+    "tier": "silver"
+}

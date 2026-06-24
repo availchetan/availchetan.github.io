@@ -1,0 +1,12 @@
+{
+    "Content-Type": "application/json",
+    "X-Razorpay-Signature": "mock_signature",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Accept": "*/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "82d0f35a-670b-4dea-8b0a-8263b3c895aa",
+    "Host": "mymealbuddy-api-79741561409.asia-south1.run.app",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Length": "100"
+}

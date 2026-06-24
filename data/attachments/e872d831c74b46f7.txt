@@ -1,0 +1,11 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Save subscription_id', function () {
+    const jsonData = pm.response.json();
+    if (jsonData.subscription && jsonData.subscription.subscription_id) {
+        pm.collectionVariables.set('subscription_id', jsonData.subscription.subscription_id);
+    } else if (jsonData.subscription_id) {
+        pm.collectionVariables.set('subscription_id', jsonData.subscription_id);
+    }
+});

@@ -1,0 +1,10 @@
+{
+    "content-type": "application/json",
+    "x-process-time": "0.0428",
+    "x-request-id": "132e2a7b-bc55-4f5e-8680-b48b008c5cb2",
+    "x-cloud-trace-context": "b2c2926965131b4354e2bb2f869e6d45",
+    "date": "Wed, 24 Jun 2026 15:46:18 GMT",
+    "server": "Google Frontend",
+    "Content-Length": "123",
+    "Alt-Svc": "h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000"
+}

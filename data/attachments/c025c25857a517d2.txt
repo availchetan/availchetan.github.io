@@ -1,0 +1,1 @@
+{"success":true,"message":"Test data cleaned up successfully","deleted":["addresses","wallet_transactions","otp (phone: +919999999955)","wallet_balance (reset)"]}

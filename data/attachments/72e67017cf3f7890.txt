@@ -1,0 +1,7 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Save address_id', function () {
+    const jsonData = pm.response.json();
+    pm.collectionVariables.set('address_id', jsonData.address_id);
+});

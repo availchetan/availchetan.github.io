@@ -1,0 +1,8 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Balance reflects all operations', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData.balance).to.be.a('number');
+    pm.expect(jsonData.balance).to.be.at.least(0);
+});

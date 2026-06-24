@@ -1,0 +1,8 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Save token and user_id', function () {
+    const jsonData = pm.response.json();
+    pm.collectionVariables.set('auth_token', jsonData.token);
+    pm.collectionVariables.set('user_id', jsonData.user.user_id);
+});

@@ -1,0 +1,9 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Debit successful', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData.success).to.be.true;
+    pm.expect(jsonData).to.have.property('transaction_id');
+    pm.expect(jsonData).to.have.property('new_balance').that.is.a('number');
+});

@@ -1,0 +1,9 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Balance response has required fields', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property('user_id');
+    pm.expect(jsonData).to.have.property('balance').that.is.a('number');
+    pm.expect(jsonData).to.have.property('currency').that.equals('INR');
+});

@@ -1,0 +1,22 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Response time < 3000ms', function () {
+    pm.expect(pm.response.responseTime).to.be.below(3000);
+});
+pm.test('Response has token and user', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property('success').that.is.a('boolean');
+    pm.expect(jsonData).to.have.property('token').that.is.a('string');
+    pm.expect(jsonData).to.have.property('user').that.is.an('object');
+    pm.expect(jsonData.success).to.be.true;
+});
+pm.test('Save token and user_id', function () {
+    const jsonData = pm.response.json();
+    pm.collectionVariables.set('auth_token', jsonData.token);
+    pm.collectionVariables.set('user_id', jsonData.user.user_id);
+    pm.expect(jsonData.token).to.not.be.empty;
+});
+pm.test('Content-Type is JSON', function () {
+    pm.expect(pm.response.headers.get('Content-Type')).to.include('application/json');
+});

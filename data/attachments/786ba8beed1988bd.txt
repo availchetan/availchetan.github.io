@@ -1,0 +1,5 @@
+pm.collectionVariables.set('auth_token', '');
+pm.collectionVariables.set('user_id', '');
+pm.collectionVariables.set('address_id', '');
+pm.collectionVariables.set('subscription_id', '');
+pm.collectionVariables.set('task_id', '');

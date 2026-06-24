@@ -1,0 +1,7 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Balance increased after recharge', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData.balance).to.be.at.least(500);
+});

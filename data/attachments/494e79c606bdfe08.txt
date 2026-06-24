@@ -1,0 +1,12 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Response is an array', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.be.an('array');
+});
+pm.test('At least one city exists', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData.length).to.be.at.least(1);
+    pm.expect(jsonData).to.include('bangalore');
+});

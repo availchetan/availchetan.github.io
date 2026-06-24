@@ -1,0 +1,1 @@
+{"menu_plan":"Bangalore Veg Delight","duration_days":15,"meals_per_day":2,"total_meals":30,"price_per_meal":150.0,"subtotal":4500.0,"delivery_fee":1470.0,"total":5970.0,"wallet_balance":0.0,"wallet_applied":0.0,"payable_amount":5970.0,"user_type":"public","tier":"silver"}

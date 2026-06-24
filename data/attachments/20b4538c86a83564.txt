@@ -1,0 +1,17 @@
+pm.test('Status code is 200', function () {
+    pm.response.to.have.status(200);
+});
+pm.test('Response has menus array', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData).to.have.property('menus').that.is.an('array');
+});
+pm.test('At least one menu exists', function () {
+    const jsonData = pm.response.json();
+    pm.expect(jsonData.menus.length).to.be.at.least(1);
+});
+pm.test('Save first menu_id', function () {
+    const jsonData = pm.response.json();
+    if (jsonData.menus && jsonData.menus.length > 0) {
+        pm.collectionVariables.set('menu_id', jsonData.menus[0].menu_id);
+    }
+});

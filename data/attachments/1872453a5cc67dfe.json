@@ -1,0 +1,12 @@
+{
+    "Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyXzA2ODU1Yzc1NDNiMCIsImV4cCI6MTc4NDkwNzk5MSwiaWF0IjoxNzgyMzE1OTkxLCJpc3MiOiJNeU1lYWxCdWRkeSJ9.2yev7mZZbei3ttuLiysARjp7yKMKcQO7rf6QYYZS4Uw",
+    "Content-Type": "application/json",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Accept": "*/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "b505607a-4a96-47a2-b3dc-28e9994d6beb",
+    "Host": "mymealbuddy-api-79741561409.asia-south1.run.app",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Length": "202"
+}

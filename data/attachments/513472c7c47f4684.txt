@@ -1,0 +1,17 @@
+const menuId = pm.collectionVariables.get('menu_id');
+if (!menuId) {
+    pm.test('Skipped - no menu_id', function() {
+        pm.expect(true).to.be.true;
+        console.log('Skipped: menu_id not set');
+    });
+} else {
+    pm.test('Status code is 200', function () {
+        pm.response.to.have.status(200);
+    });
+    pm.test('Menu has required fields', function () {
+        const jsonData = pm.response.json();
+        pm.expect(jsonData).to.have.property('menu_id');
+        pm.expect(jsonData).to.have.property('name');
+        pm.expect(jsonData).to.have.property('price_per_meal').that.is.a('number');
+    });
+}

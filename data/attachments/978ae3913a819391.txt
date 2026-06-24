@@ -1,0 +1,9 @@
+{
+    "label": "Office",
+    "address_line_1": "456 Business Park",
+    "address_line_2": "Tower 2",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "pincode": "560001",
+    "is_default": false
+}

@@ -1,0 +1,6 @@
+pm.test('Cleanup successful', function () {
+    pm.response.to.have.status(200);
+});
+pm.collectionVariables.set('auth_token', '');
+pm.collectionVariables.set('user_id', '');
+pm.collectionVariables.set('order_id', '');

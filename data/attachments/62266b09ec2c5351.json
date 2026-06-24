@@ -1,0 +1,11 @@
+{
+    "X-Admin-Key": "admin-secret-key-123456",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Accept": "*/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "90b4d1d7-2141-4992-a9dd-1ed99dc7e587",
+    "Host": "mymealbuddy-api-79741561409.asia-south1.run.app",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Length": "0"
+}

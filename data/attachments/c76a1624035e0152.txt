@@ -1,0 +1,16 @@
+const taskId = pm.collectionVariables.get('task_id');
+if (!taskId) {
+    pm.test('Skipped - no task_id', function() {
+        pm.expect(true).to.be.true;
+        console.log('Skipped: task_id not set');
+    });
+} else {
+    pm.test('Status code is 200', function () {
+        pm.response.to.have.status(200);
+    });
+    pm.test('Tracking info has required fields', function () {
+        const jsonData = pm.response.json();
+        pm.expect(jsonData).to.have.property('task_id');
+        pm.expect(jsonData).to.have.property('status');
+    });
+}

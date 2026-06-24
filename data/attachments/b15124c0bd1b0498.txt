@@ -1,0 +1,1 @@
+{"success":true,"order_id":"mock_order_wallet_user_9fd83cd8e444_065b9d0f","amount":500.0,"currency":"INR","razorpay_key":"rzp_test_SlV0Dd6VyJ9juA\r\n","message":"Use this order_id with Razorpay checkout. Wallet will be credited after payment."}

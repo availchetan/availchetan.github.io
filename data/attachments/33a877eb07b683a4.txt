@@ -1,0 +1,17 @@
+const subId = pm.collectionVariables.get('subscription_id');
+if (!subId) {
+    pm.test('Skipped - no subscription_id', function() {
+        pm.expect(true).to.be.true;
+        console.log('Skipped: subscription_id not set');
+    });
+} else {
+    pm.test('Status code is 200', function () {
+        pm.response.to.have.status(200);
+    });
+    pm.test('Delivery task created', function () {
+        const jsonData = pm.response.json();
+        pm.expect(jsonData.success).to.be.true;
+        pm.expect(jsonData).to.have.property('task_id').that.is.a('string');
+        pm.collectionVariables.set('task_id', jsonData.task_id);
+    });
+}
